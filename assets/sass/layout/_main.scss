@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-main{
+  flex-grow: 1;
+  @include responsive(md) {
+  }
+  @include responsive(xl) {
+  }
+}

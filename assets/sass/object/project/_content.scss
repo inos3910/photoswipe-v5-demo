@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.p-content{
+  padding-top: 120px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 120px;
+  @include responsive(md) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  @include responsive(xl) {
+  }
+
+  &__title{
+    margin-bottom: 1em  ;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    @include responsive(md) {
+    }
+    @include responsive(xl) {
+    }
+  }
+
+  &__link{
+    margin-top: 45px;
+    text-align: center;
+    line-height: 1.6;
+    @include responsive(md) {
+    }
+    @include responsive(xl) {
+    }
+
+    a{
+      color: $blue;
+      @media (any-hover: hover) {
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

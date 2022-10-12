@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.l-footer {
+  color: #fff;
+  background: #111;
+  @include responsive(md) {
+  }
+  @include responsive(xl) {
+  }
+
+  &__inner{
+    padding: 30px;
+    @include responsive(md) {
+      padding: 30px 0;
+    }
+    @include responsive(xl) {
+    }
+  }
+
+  &__copyright{
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    @include responsive(md) {
+    }
+    @include responsive(xl) {
+    }
+  }
+}

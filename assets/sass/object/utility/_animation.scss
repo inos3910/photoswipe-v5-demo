@@ -1,0 +1,7 @@
+@use "global" as *;
+
+@include keyframes (Spin) {
+  to {
+    transform: rotate(360deg);
+  }
+}

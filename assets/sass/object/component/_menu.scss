@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.c-menu {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #000;
+  transition: $transition;
+  transition-property: opacity, visibility;
+  @include responsive(md) {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    width: auto;
+    height: auto;
+    color: currentColor;
+    background: none;
+    flex-direction: row;
+    transition: none;
+  }
+  @include responsive(xl) {
+  }
+
+  a{
+    font-size: 18px;
+    letter-spacing: 0.09em;
+  }
+
+  .is-menu-active & {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    @include responsive(md) {
+    }
+    @include responsive(xl) {
+    }
+  }
+}
