@@ -13,27 +13,23 @@
   @include responsive(xl) {
   }
 
-  &.is-loading{
-    pointer-events: none;
-  }
-
   &__item{
     overflow: hidden;
-    content-visibility: auto;
-    contain-intrinsic-size: vw-size-sp(200);
     aspect-ratio: 1/1;
     background: #ccc;
     @include responsive(md) {
-      contain-intrinsic-size: vw-size-pc(224);
     }
     @include responsive(xl) {
-      contain-intrinsic-size: 224px;
     }
 
     @media (any-hover: hover) {
       &:hover{
         opacity: 0.8;
       }
+    }
+
+    &.is-loading{
+      pointer-events: none;
     }
   }
 }
