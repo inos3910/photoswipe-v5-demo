@@ -14,6 +14,7 @@ class Gallery {
     }
 
     imagesLoaded(gallery, () => {
+      gallery.classList.remove('is-loading');
       this.imagePopUp(gallery);
     });
   }

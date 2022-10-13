@@ -13,6 +13,10 @@
   @include responsive(xl) {
   }
 
+  &.is-loading{
+    pointer-events: none;
+  }
+
   &__item{
     overflow: hidden;
     content-visibility: auto;
