@@ -40,7 +40,6 @@ class Gallery {
     const lightbox = new PhotoSwipeLightbox({
       gallery              : gallery,
       children             : 'a',
-      showHideAnimationType: 'zoom',
       pswpModule           : PhotoSwipe
     });
 
